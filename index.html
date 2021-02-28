@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="engine" content="StarLoader V 0.1.3">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>StarLoader</title>
+		<link rel="stylesheet" href="core/style.css">
+		<link rel="shortcut icon" href="core/icon.png" type="image/png">
+	</head>
+	<body>
+		<header class="container">
+			<div class="row">
+				<div class="cl-4">
+					<h3>StarLoader</h3>
+				</div>
+				<div class="cl-8 menu">
+					<button class="btn-menu" id="menu">
+						<span class="icon-menu"></span>
+					</button>
+				</div>
+			</div>
+			<div class="row" id="menu-content">
+				<div class="cl-12">
+					<form method="post" action="" id="search">
+						<input type="text" name="search" id="search-data" placeholder="Search..." autocomplete="off">
+					</form>
+				</div>
+			</div>
+			<div class="row" id="message">
+				<!-- MESSAGES -->
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="cl-12">
+						<form method="post" action="" enctype="multipart/form-data" id="upload">
+							<label for="file" class="text">CLICK TO UPLOAD</label>
+							<input id="file" type="file" name="file[]" multiple>
+							<input type="submit" value="upload">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="cl-12" id="filelist">
+					<!-- FILES -->
+				</div>
+			</div>
+		</section>
+		<footer class="container">
+			<div class="row">
+				<div class="cl-12">
+					<p>application created by <a href="">DreamIcon</a></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="core/script.js"></script>
+	</body>
+</html>

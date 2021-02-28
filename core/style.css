@@ -1,0 +1,320 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+
+/* GLYPHICONS START */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?m8igw1');
+  src:  url('fonts/icomoon.eot?m8igw1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?m8igw1') format('truetype'),
+    url('fonts/icomoon.woff?m8igw1') format('woff'),
+    url('fonts/icomoon.svg?m8igw1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file:before {
+  content: "\e926";
+}
+.icon-image:before {
+  content: "\e927";
+}
+.icon-sound:before {
+  content: "\e928";
+}
+.icon-video:before {
+  content: "\e92a";
+}
+.icon-archive:before {
+  content: "\e92b";
+}
+.icon-execute:before {
+  content: "\e995";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cloud:before {
+  content: "\e9c1";
+}
+.icon-upload:before {
+  content: "\e9c3";
+}
+.icon-pdf:before {
+  content: "\eadf";
+}
+.icon-word:before {
+  content: "\eae1";
+}
+.icon-excel:before {
+  content: "\eae2";
+}
+
+/* GLYPHICONS END */
+
+/*  */
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,1)), url('bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', serif;
+	overflow-y: scroll;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+/* width */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #47B;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #8AB;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #CEF;
+}
+
+footer {
+	text-align: center;
+}
+/**/
+
+/* TEXT STYLE : START */
+h1 {
+	color: #27B;
+	font-size: 2em;
+}
+
+h2 {
+	color: #27B;
+	font-size: 1.75em;
+}
+
+h3 {
+	color: #27B;
+	font-size: 1.5em;
+}
+
+p {
+	color: #27B;
+	margin: 5px;
+}
+
+a {
+	color: #AAA;
+	text-decoration: none;
+	transition: all .4s;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #27B;
+}
+/* TEXT STYLE : END */
+
+.container {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cl-12 {
+	width: 100%;
+}
+
+.cl-11 {
+	width: 91.6667%;
+}
+
+.cl-10 {
+	width: 83.3333%;
+}
+
+.cl-9 {
+	width: 75%;
+}
+
+.cl-8 {
+	width: 66.6667%;
+}
+
+.cl-7 {
+	width: 58.3333%;
+}
+
+.cl-6 {
+	width: 50%;
+}
+
+.cl-5 {
+	width: 41.6667%;
+}
+
+.cl-4 {
+	width: 33.3333%;
+}
+
+.cl-3 {
+	width: 25%;
+}
+
+.cl-2 {
+	width: 16.6667%;
+}
+
+.cl-1 {
+	width: 8.3333%;
+}
+
+.menu {
+	text-align: right;
+}
+
+.btn-menu {
+	font-size: 28pt;
+	background: transparent;
+	color: #FFF;
+	border: 0px;
+	margin: 14px 0;
+	outline: none;
+	transition: color .4s;
+}
+
+.btn-menu:hover {
+	color: #27B;
+}
+
+#menu-content {
+	padding: 5px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+}
+
+#search {
+	width: 100%;
+	margin: 5px 0;
+}
+
+#search-data {
+	width: -webkit-fill-available;
+	background: rgba(255, 255, 255, .7);
+	padding: 10px;
+	font-size: 16px;
+	border: 0px;
+	border-radius: 5px;
+	color: #000;
+	outline: 0;
+	box-shadow: none;
+	transition: background .7s, font-size .4s, border-color .4s;
+}
+
+#search-data:hover {
+	background: rgba(255, 255, 255, .7);
+}
+	
+#search-data:active, #search-data:focus {
+	background: rgba(255, 255, 255, 1);
+}
+
+.alert-ok {
+	background: rgba(34, 119, 187, .3);
+	color: #AAA;
+	padding: 10px;
+	margin: 5px 0;
+}
+
+.alert-no {
+	background: rgba(187, 34, 34, .3);
+	color: #AAA;
+	padding: 10px;
+	margin: 5px 0;
+}
+
+#upload {
+	background: rgba(255, 255, 255, .1);
+	margin: 5px 0;
+	transition: background-color .4s, margin .4s;
+}
+
+#upload:hover {
+	background: rgba(255, 255, 255, .3);
+}
+
+form>.text {
+	display: block;
+    padding: 20px;
+    text-align: center;
+    color: #AAA;
+	transition: color .4s;
+}
+
+form>.text:hover {
+    color: #FFF;
+}
+
+form>#file {
+	display: none;
+}
+
+form>input[type=submit] {
+	display: none;
+}
+
+.card {
+	margin: 5px 0;
+	padding: 10px;
+	opacity: 0;
+	background: rgba(255, 255, 255, .1);
+	text-decoration: none;
+	display: block;
+	transition: background .4s;
+}
+
+.card:hover {
+	background: rgba(255, 255, 255, .3);
+	text-decoration: none;
+	color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		background: #112;
+		padding: 0 10px;
+	}
+}

@@ -1,2 +1,2 @@
 # star-loader
-file upload web app
+Сайт для загрузки файлов.
